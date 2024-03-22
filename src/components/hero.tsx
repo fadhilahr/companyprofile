@@ -29,7 +29,9 @@ export default function Hero() {
           <div className="w-full self-end px-4">
             <div className="relative mt-10 lg:right-0 lg:mt-9">
               <Image
-                src="image.jpg"
+                src="/image.jpg"
+                width={400}
+                height={300}
                 alt="image"
                 className="relative z-20 mx-auto max-w-full"
               />
