@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -27,7 +28,7 @@ export default function Hero() {
 
           <div className="w-full self-end px-4">
             <div className="relative mt-10 lg:right-0 lg:mt-9">
-              <img
+              <Image
                 src="image.jpg"
                 alt="image"
                 className="relative z-20 mx-auto max-w-full"
