@@ -1,9 +1,16 @@
-import Hero from "@/components/hero";
-
-
 import { getTeam } from '@/lib/team'
+import { Metadata } from 'next';
 import Image from 'next/image'
 import React from 'react'
+
+
+
+export const metadata: Metadata = {
+  title: "Team",
+  description: "Shinergy Tecno ! team page",
+};
+
+
 
 
 export default async function Team() {
