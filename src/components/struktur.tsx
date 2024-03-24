@@ -1,13 +1,14 @@
+
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 
 export default function Struktur({
-
+  profile,
   position,
   name,
   experience,
 }: {
-
+  profile :StaticImageData;
   position: string;
   name: string;
   experience: string;
@@ -20,7 +21,8 @@ export default function Struktur({
 
       <div className="flex flex-col justify-center gap-3">
         <div className="flex items-center max-sm:flex-col-reverse gap-3">
-          <div className="flex md:hidden">
+          <div className="flex">
+            <Image src={profile} alt="profile " className=" w-[150px] rounded-full"/>
           </div>
           <div>
             <h2 className="text-xwhite text-2xl font-bold max-sm:text-center">

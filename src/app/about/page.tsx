@@ -1,4 +1,4 @@
-import hero from "@/components/hero";
+import hero from "../../../public/hero.jpg";
 import Struktur from "@/components/struktur";
 import { Metadata } from "next";
 
@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   title: "About us",
   description: "Shinergy Tecno ! about page",
 };
-
 
 export default function About() {
   return (
@@ -56,6 +55,7 @@ export default function About() {
           </h1>
           <div className=" flex justify-center gap-5 flex-wrap">
             <Struktur
+              profile={hero}
               position={" Cief Excecutive Officer"}
               name={"Hugeng "}
               experience={
@@ -63,10 +63,11 @@ export default function About() {
               }
             />
             <Struktur
+              profile={hero}
               position={" Cief Financial Officer"}
               name={"Susi "}
               experience={
-                " I don't have direct personal experiences or emotions like a human CEO would. However,I can provide you with information about the typical experiences and responsibilities of a Chief Executive Officer (CEO) based on common practices in the business world."
+                " A CFO is a senior executive responsible for managing a company's financial actions. Their primary duties include financial planning, monitoring cash flow, analyzing the company's financial strengths and weaknesses, and making strategic decisions to ensure financial stability and growth.                ."
               }
             />
           </div>
@@ -77,11 +78,14 @@ export default function About() {
           <h1 className="text-4xl md:text-5xl font-bold text-blue2 pb-5 max-md:text-center text-orange-400">
             Culture
           </h1>
-          <p className=" text-white landing-10 text-justify text-xl font-light">
-            Innovation and Creativity: Software development companies emphasize
-            a culture of innovation and creativity. Employees are encouraged to
-            think outside the box, come up with new solutions, and propose ideas
-            that can enhance the company's products and services.
+          <div className=" text-white landing-10 text-justify text-xl font-light">
+            <p>
+              Innovation and Creativity: Software development companies
+              emphasize a culture of innovation and creativity. Employees are
+              encouraged to think outside the box, come up with new solutions,
+              and propose ideas that can enhance the company's products and
+              services.
+            </p>
             <p>
               Team Collaboration: Collaboration is a cornerstone of the working
               culture in software development. Development teams, designers,
@@ -125,7 +129,7 @@ export default function About() {
               discrimination-free environment based on gender, race, religion,
               sexual orientation, and other backgrounds.
             </p>
-          </p>
+          </div>
         </div>
       </div>
     </section>

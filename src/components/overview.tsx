@@ -2,10 +2,10 @@
 
 export default function Overview() {
   return (
-    <div className="flex justify-normal scrollmargin" id="overview">
+    <div className="flex justify-center scrollmargin" id="overview">
       <div className="flex justify-evenly gap-10 flex-wrap-reverse items-center md:w-[90vw] pt-20 px-10">
         <div className="md:flex-1 md:min-w-[500px]">
-          <h1 className="text-4xl md:text-5xl font-bold max-md:text-center text-orange-400 mb-5 ">
+          <h1 className="text-4xl md:text-5xl font-bold text-center text-orange-400 mb-5 ">
             Company Overview
           </h1>
           <p className="text-xwhite leading-10 text-justify text-xl font-light">
