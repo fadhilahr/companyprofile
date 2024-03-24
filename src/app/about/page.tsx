@@ -78,7 +78,7 @@ export default function About() {
           <h1 className="text-4xl md:text-5xl font-bold text-blue2 pb-5 max-md:text-center text-orange-400">
             Culture
           </h1>
-          <div className=" text-white landing-10 text-justify text-xl font-light">
+          <div className="  landing-10 text-justify text-xl font-light">
             <p>
               Innovation and Creativity: Software development companies
               emphasize a culture of innovation and creativity. Employees are
